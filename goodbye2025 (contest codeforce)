@@ -1,0 +1,28 @@
+//probleme A 
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+
+    while (t--) {
+        string s;
+        cin >> s;
+        stack<char> st;
+        int nbrY = 0;
+        int nbrN = 0;
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] == 'Y') nbrY++;
+            
+        }
+        if (nbrY <= 1) cout << "YES" << endl;
+
+        else cout << "NO" << endl;
+    }
+
+    return 0;
+}
